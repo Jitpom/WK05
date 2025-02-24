@@ -89,7 +89,7 @@ footer{
         animation-name: move-bird;
         animation-duration: 10s;
         animation-timing-function: linear;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite;     
     }
 }
 
@@ -107,13 +107,13 @@ footer{
 
 @keyframes move-bird{
     0%{
-        transform: translate(0px, 0px);
+        transform: translate(500px, 500px);
     }
     25%{
-        transform: translate(-200px, -50px);
+        transform: translate(200px, -50px);
     }
     50%{
-        transform: translate(-300px, 50px);
+        transform: translate(-100px, 50px);
     }
     100%{
         transform: translate(-500px, -100px);
