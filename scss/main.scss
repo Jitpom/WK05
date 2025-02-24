@@ -22,11 +22,12 @@ header{
     position: relative;
     #menu-icon{
         position: absolute;
-        top: 0;
-        right: 0;
+        top: $sizing-md;
+        right: $sizing-md;
         z-index: 2;
         i{
             font-size: $sizing-lg;
+            cursor: pointer;
         }
     }
 

@@ -66,12 +66,13 @@ header {
 }
 header #menu-icon {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 16px;
+  right: 16px;
   z-index: 2;
 }
 header #menu-icon i {
   font-size: 32px;
+  cursor: pointer;
 }
 header nav {
   position: absolute;
