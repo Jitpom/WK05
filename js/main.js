@@ -13,6 +13,7 @@ $(document).ready(function(){ //wait until all the elements are loaded
 
     let lastScrollPos = 0;
     let borderRadiusFactor;
+    let sizingFactor;
 
     $(window).scroll(function(){
         let currentScrollPos = $(this).scrollTop();
@@ -29,7 +30,10 @@ $(document).ready(function(){ //wait until all the elements are loaded
         lastScrollPos = currentScrollPos; 
 
         borderRadiusFactor = currentScrollPos * 0.15;
+        sizingFactor = 200 - (currentScrollPos * 0.15);
         $("#shape").css("border-radius", borderRadiusFactor + "%");
+        $("#shape").css("width", sizingFactor + "px");
+        $("#shape").css("height", sizingFactor + "px");
     });
 });
 
