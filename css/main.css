@@ -120,7 +120,14 @@ header nav li:hover {
 }
 
 @media screen and (min-width: 780px) {
-  #menu-icon {
+  header #menu-icon {
     display: none;
+  }
+  header nav {
+    transform: translateY(0px);
+    opacity: 1;
+    flex-direction: row;
+    justify-content: center;
+    background: yellow;
   }
 }/*# sourceMappingURL=main.css.map */

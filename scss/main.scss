@@ -79,7 +79,16 @@ header{
 }
 
 @media screen and (min-width: 780px){
-    #menu-icon{
-        display: none;
+    header{        
+        #menu-icon{
+            display: none;
+        }
+        nav{
+            transform: translateY(0px);
+            opacity: 1;
+            flex-direction: row;
+            justify-content: center;
+            background: $secondary-color;
+        }
     }
 }
