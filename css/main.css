@@ -130,4 +130,24 @@ header nav li:hover {
     justify-content: center;
     background: yellow;
   }
+  #content-container {
+    display: grid;
+    grid-template-columns: 2f 1f 1f;
+    grid-template-areas: "left item2 item3" "left item4 item5";
+  }
+  #content-container .content-1 {
+    grid-area: left;
+  }
+  #content-container .content-2 {
+    grid-area: item2;
+  }
+  #content-container .content-3 {
+    grid-area: item4;
+  }
+  #content-container .content-4 {
+    grid-area: item5;
+  }
+  #content-container .content-5 {
+    grid-area: item3;
+  }
 }/*# sourceMappingURL=main.css.map */

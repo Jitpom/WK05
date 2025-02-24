@@ -91,4 +91,28 @@ header{
             background: $secondary-color;
         }
     }
+
+    #content-container{
+        display: grid;
+        grid-template-columns: 2f 1f 1f;
+        grid-template-areas: "left item2 item3"
+        "left item4 item5";
+
+        .content-1{
+            grid-area: left;
+        }
+        .content-2{
+            grid-area: item2;
+        }
+        .content-3{
+            grid-area: item4;
+        }
+        .content-4{
+            grid-area: item5;
+        }
+        .content-5{
+            grid-area: item3;
+        }
+
+    }
 }
