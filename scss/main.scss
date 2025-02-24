@@ -61,3 +61,25 @@ header{
         }
     }
 }
+
+#content-container{
+    width: 100%;
+    article{
+        width: 100%;
+        padding: $sizing-xl $sizing-sm;
+        box-sizing: border-box;
+        background: $bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:nth-child(2n){ //selecting the even numbers
+            background: white;
+        }
+    }
+}
+
+@media screen and (min-width: 780px){
+    #menu-icon{
+        display: none;
+    }
+}

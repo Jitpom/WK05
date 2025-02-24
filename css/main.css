@@ -101,4 +101,26 @@ header nav li {
 }
 header nav li:hover {
   background: grey;
+}
+
+#content-container {
+  width: 100%;
+}
+#content-container article {
+  width: 100%;
+  padding: 64px 8px;
+  box-sizing: border-box;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content-container article:nth-child(2n) {
+  background: white;
+}
+
+@media screen and (min-width: 780px) {
+  #menu-icon {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
