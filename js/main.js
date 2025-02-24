@@ -10,6 +10,18 @@ $(document).ready(function(){ //wait until all the elements are loaded
             $("header nav").addClass("active");
         }        
     });
+
+    $(window).scroll(function(){
+        let currentScrollPos = $(this).scrollTop();
+        console.log(currentScrollPos);
+
+        if(currentScrollPos > 50){
+            $("header nav").addClass("inactive");
+        }
+        else{
+            $("header nav").removeClass("inactive");
+        }
+    });
 });
 
 

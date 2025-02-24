@@ -126,11 +126,16 @@ footer{
             display: none;
         }
         nav{
+            position: fixed;
             transform: translateY(0px);
             opacity: 1;
             flex-direction: row;
             justify-content: center;
             background: $secondary-color;
+            &.inactive{
+                transform: translateY(-48px);
+                opacity: 0;
+            }
         }
     }
 

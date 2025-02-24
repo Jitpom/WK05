@@ -162,11 +162,16 @@ footer #bird {
     display: none;
   }
   header nav {
+    position: fixed;
     transform: translateY(0px);
     opacity: 1;
     flex-direction: row;
     justify-content: center;
     background: #E9762B;
+  }
+  header nav.inactive {
+    transform: translateY(-48px);
+    opacity: 0;
   }
   #content-container {
     display: grid;
