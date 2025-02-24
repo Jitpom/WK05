@@ -1,3 +1,29 @@
 @use 'reset';
 @use 'setting';
 
+$primary-color: blue;
+$secondary-color: yellow;
+$bg-color: grey;
+
+$sizing-sm: 8px;
+$sizing-md: 16px;
+$sizing-lg: 32px;
+$sizing-xl: 64px;
+
+// Mobile First Design
+// One column for each row
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: $primary-color;
+    position: relative;
+    #menu-icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        i{
+            font-size: $sizing-lg;
+        }
+    }
+}
