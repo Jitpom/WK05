@@ -11,6 +11,8 @@ $(document).ready(function(){ //wait until all the elements are loaded
         }        
     });
 
+    let lastScrollPos = 0;
+
     $(window).scroll(function(){
         let currentScrollPos = $(this).scrollTop();
         console.log(currentScrollPos);
@@ -21,6 +23,14 @@ $(document).ready(function(){ //wait until all the elements are loaded
         else{
             $("header nav").removeClass("inactive");
         }
+
+        if (currentScrollPos > lastScrollPos){
+            console.log("Scrolling down");
+        }
+        else{
+            console.log("Scrolling up");
+        }
+        lastScrollPos = currentScrollPos; 
     });
 });
 
