@@ -40,7 +40,14 @@ header{
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
-        // transform: translateY(-240px);
+        transform: translateY(-240px);
+        opacity: 0;
+        transition: 0.5s all ease-in-out;
+        &.active{
+            opacity: 1;
+            transform:translateY(0px)
+        }
+
         li{
             font-size: $font-size;
             list-style: none;
