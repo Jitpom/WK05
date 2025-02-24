@@ -22,7 +22,7 @@ header{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     #menu-icon{
         position: absolute;
         top: $sizing-md;
@@ -68,6 +68,7 @@ header{
         width: 200px;
         height: 200px;
         background: $bg-color;
+        transition: 0.3s all linear;
     }
 }
 

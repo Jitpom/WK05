@@ -65,7 +65,7 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 header #menu-icon {
   position: absolute;
@@ -109,6 +109,7 @@ header #shape {
   width: 200px;
   height: 200px;
   background: #F1F0E9;
+  transition: 0.3s all linear;
 }
 
 #content-container {

@@ -12,17 +12,11 @@ $(document).ready(function(){ //wait until all the elements are loaded
     });
 
     let lastScrollPos = 0;
+    let borderRadiusFactor;
 
     $(window).scroll(function(){
         let currentScrollPos = $(this).scrollTop();
         console.log(currentScrollPos);
-
-        // if(currentScrollPos > 50){
-        //     $("header nav").addClass("inactive");
-        // }
-        // else{
-        //     $("header nav").removeClass("inactive");
-        // }
 
         if (currentScrollPos > lastScrollPos){
             console.log("Scrolling down");
@@ -33,6 +27,9 @@ $(document).ready(function(){ //wait until all the elements are loaded
             $("header nav").removeClass("inactive");
         }
         lastScrollPos = currentScrollPos; 
+
+        borderRadiusFactor = currentScrollPos * 0.15;
+        $("#shape").css("border-radius", borderRadiusFactor + "%");
     });
 });
 
