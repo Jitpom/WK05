@@ -17,18 +17,20 @@ $(document).ready(function(){ //wait until all the elements are loaded
         let currentScrollPos = $(this).scrollTop();
         console.log(currentScrollPos);
 
-        if(currentScrollPos > 50){
-            $("header nav").addClass("inactive");
-        }
-        else{
-            $("header nav").removeClass("inactive");
-        }
+        // if(currentScrollPos > 50){
+        //     $("header nav").addClass("inactive");
+        // }
+        // else{
+        //     $("header nav").removeClass("inactive");
+        // }
 
         if (currentScrollPos > lastScrollPos){
             console.log("Scrolling down");
+            $("header nav").addClass("inactive");
         }
         else{
             console.log("Scrolling up");
+            $("header nav").removeClass("inactive");
         }
         lastScrollPos = currentScrollPos; 
     });

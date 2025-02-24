@@ -63,6 +63,9 @@ header {
   height: 100vh;
   background: #0D4715;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header #menu-icon {
   position: absolute;
@@ -100,6 +103,11 @@ header nav li {
   cursor: pointer;
 }
 header nav li:hover {
+  background: #F1F0E9;
+}
+header #shape {
+  width: 200px;
+  height: 200px;
   background: #F1F0E9;
 }
 
