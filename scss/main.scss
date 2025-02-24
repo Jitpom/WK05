@@ -38,14 +38,18 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        height: 100vh;
         width: 100%;
+        transform: translateY(-240px);
         li{
             font-size: $font-size;
             list-style: none;
             text-align: center;
             background: $secondary-color;
             padding: $sizing-md $sizing-sm;
+            cursor: pointer;
+            &:hover{
+                background: $bg-color;
+            }
         }
     }
 }
